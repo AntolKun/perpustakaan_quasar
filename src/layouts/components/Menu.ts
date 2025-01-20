@@ -9,111 +9,39 @@ export const menus:Menu[] = [
     text: 'Dashboard'
   },
   {
-    isTitle: true,
-    text: 'Table',
-    isDivider: false,
-    icon: ''
-  },
-  {
-    icon: 'table_chart',
+    icon: 'book',
     isDivider: false,
     isTitle: false,
-    text: 'Table',
+    text: 'Buku',
     child: [
       {
         icon: 'chevron_right',
-        text: 'Table Default',
-        to: 'tableAdmin'
+        text: 'Kategori Buku',
+        to: 'kategoriBuku'
       },
       {
         icon: 'chevron_right',
-        text: 'Table Pagination',
-        to: 'tablePaginationAdmin'
+        text: 'Data Buku',
+        to: 'dataBuku'
       }
     ]
-  },
-  {
-    isTitle: true,
-    text: 'Components',
-    isDivider: false,
-    icon: ''
   },
   {
     icon: 'apps',
     isDivider: false,
     isTitle: false,
-    text: 'UI Elements',
+    text: 'Pinjam & Kembali',
     child: [
       {
         icon: 'chevron_right',
-        text: 'Button',
-        to: 'buttonAdmin'
+        text: 'Peminjaman',
+        to: 'peminjamanBuku'
       },
       {
         icon: 'chevron_right',
-        text: 'Card',
-        to: 'cardAdmin'
-      },
-      {
-        icon: 'chevron_right',
-        text: 'Dialog',
-        to: 'dialogAdmin'
-      },
-      {
-        icon: 'chevron_right',
-        text: 'Notify',
-        to: 'notifyAdmin'
-      },
-      {
-        icon: 'chevron_right',
-        text: 'Tab',
-        to: 'tabAdmin'
+        text: 'Pengembalian',
+        to: 'pengembalianBuku'
       }
     ]
-  },
-  {
-    icon: 'list_alt',
-    isDivider: false,
-    isTitle: false,
-    text: 'Forms',
-    to: 'formAdmin'
-  },
-  {
-    isTitle: true,
-    text: 'Pages & Apps',
-    isDivider: false,
-    icon: ''
-  },
-  {
-    icon: 'security',
-    isDivider: false,
-    isTitle: false,
-    text: 'Auth',
-    child: [
-      {
-        icon: 'chevron_right',
-        text: 'Login',
-        to: 'loginPage'
-      },
-      {
-        icon: 'chevron_right',
-        text: 'Register',
-        to: 'registerPage'
-      }
-    ]
-  },
-  {
-    to: 'notesAppAdmin',
-    icon: 'description',
-    isDivider: false,
-    isTitle: false,
-    text: 'Notes App'
-  },
-  {
-    to: 'blankAdmin',
-    icon: 'check_box_outline_blank',
-    isDivider: false,
-    isTitle: false,
-    text: 'Blank Page'
   }
 ]

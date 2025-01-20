@@ -12,10 +12,10 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Dashboard UI
+        <q-toolbar-title class="q-mt-sm">
+          Perpustakaan Daerah Lampung
         </q-toolbar-title>
-        <div>
+        <div class="q-mt-sm">
           <q-btn
             round
             flat
@@ -112,7 +112,7 @@
       bordered
       :width="270"
     >
-      <div class="q-ml-md q-mb-lg q-mt-lg">
+      <!-- <div class="q-ml-md q-mb-lg q-mt-lg">
         <div class="row">
           <div class="row q-col-gutter-x-md items-center">
             <div class="col-auto">
@@ -123,6 +123,14 @@
             </div>
           </div>
         </div>
+      </div> -->
+
+      <div class="q-pa-md text-center q-mt-xl">
+        <q-avatar size="100px">
+          <img src="https://cdn.quasar.dev/img/avatar.png" alt="Avatar" />
+        </q-avatar>
+        <div class="q-mt-md text-h6">Selamat Datang</div>
+        <div class="text-subtitle2 text-grey">Admin</div>
       </div>
       <q-separator spaced inset />
       <q-list>

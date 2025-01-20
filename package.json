@@ -1,9 +1,9 @@
 {
-  "name": "liddy-ui",
+  "name": "quasar-perpustakaan",
   "version": "0.0.1",
-  "description": "Liddy UI",
-  "productName": "LIDDY UI",
-  "author": "hastantodika@gmail.com",
+  "description": "Perpustakaan dengan menggunakan quasar",
+  "productName": "Perpustakaan",
+  "author": "aloysiusluilui@gmail.com",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",

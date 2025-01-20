@@ -12,96 +12,6 @@
         />
       </div>
     </div>
-    <div class="row q-mt-md q-col-gutter-sm">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <q-card class="shadow-card">
-          <q-card-section>
-            <MyBarChart/>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <q-card class="shadow-card">
-          <q-card-section>
-            <MyDoughnatChart/>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <q-card class="shadow-card my-text-color full-height">
-          <q-card-section>
-            <div class="text-h6">Payment Status</div>
-            <div class="text-body2 q-mb-lg">All of status transaction</div>
-            <TransactionStatusCard
-              v-for="(s, i) in dataStatus"
-              :key="i"
-              :colorCard="s.color"
-              :title="s.title"
-              :desc="s.desc"
-              class="q-mb-md"
-              :val="s.val"
-              :icon="s.icon"
-            />
-            <q-btn
-              label="View All Status"
-              no-caps
-              color="primary"
-              outline
-              class="full-width q-mt-md"
-            />
-          </q-card-section>
-        </q-card>
-      </div>
-    </div>
-    <div class="text-body1 q-mt-lg text-bold my-text-color">Transaction</div>
-    <div class="text-body2 my-text-color q-mb-md">All of transaction data</div>
-    <q-separator class="q-mb-md"/>
-    <q-card class="shadow-card">
-      <q-card-section>
-        <q-table
-          flat
-          :rows="rows"
-          :columns="DefaultColumns"
-          row-key="name"
-          separator="none"
-        >
-          <template v-slot:body="props">
-            <q-tr :props="props">
-              <q-td key="user" :props="props">
-                <div class="row q-col-gutter-x-sm no-wrap">
-                  <div class="col-auto">
-                    <q-avatar>
-                      <img :src="props.row.img" alt="">
-                    </q-avatar>
-                  </div>
-                  <div class="col-auto">
-                    <div class="text-bold text-body1">{{ props.row.name }}</div>
-                    <div class="">{{ props.row.role }}</div>
-                  </div>
-                </div>
-              </q-td>
-              <q-td key="item" :props="props">
-                {{ props.row.item }}
-              </q-td>
-              <q-td key="price" :props="props">
-                {{ props.row.price }}
-              </q-td>
-              <q-td key="qty" :props="props">
-                {{ props.row.qty }}
-              </q-td>
-              <q-td key="total" :props="props">
-                {{ props.row.total }}
-              </q-td>
-              <q-td key="status" :props="props">
-                <q-badge class="q-pa-sm" :color="listStatus[props.row.status].color" outline>
-                  {{ listStatus[props.row.status].label }}
-                </q-badge>
-              </q-td>
-            </q-tr>
-          </template>
-        </q-table>
-      </q-card-section>
-    </q-card>
   </q-page>
 </template>
 <script lang="ts">
@@ -115,9 +25,6 @@ import { formatNumber } from 'src/helpers/Number'
 
 export default {
   components: {
-    MyBarChart,
-    MyDoughnatChart,
-    TransactionStatusCard,
     WelcomeBanner,
     SummaryCard
   },
