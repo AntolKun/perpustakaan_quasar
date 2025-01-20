@@ -12,7 +12,3 @@ and then
 ```bash
   quasar dev
 ```
-
-username = admin
-
-password = 123
